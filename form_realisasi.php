@@ -1,6 +1,5 @@
 <?php
-$k = new mysqli("localhost","root","","monitor_keuangan");
-if ($k->connect_error) { die("DB fail: ".$k->connect_error); }
+include 'koneksi.php';
 
 // Ambil daftar rekening (urut hierarki)
 $sql = "SELECT r.id_rekening,

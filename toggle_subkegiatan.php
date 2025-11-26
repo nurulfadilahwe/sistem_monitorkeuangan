@@ -1,7 +1,6 @@
 <?php
 session_start();
-$k = new mysqli("localhost","root","","monitor_keuangan");
-if ($k->connect_error) { die("DB fail: ".$k->connect_error); }
+include 'koneksi.php';
 
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $res = $k->query("SELECT is_active FROM subkegiatan WHERE id_subkegiatan=$id");

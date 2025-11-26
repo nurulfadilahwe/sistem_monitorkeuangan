@@ -3,8 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Koneksi DB
-$k = new mysqli("localhost","root","","monitor_keuangan");
-if ($k->connect_error) { die("DB fail: ".$k->connect_error); }
+include 'koneksi.php';
 
 $tahun = isset($_GET['tahun']) ? (int)$_GET['tahun'] : (int)date('Y');
 $bulan = isset($_GET['bulan']) ? (int)$_GET['bulan'] : (int)date('n');

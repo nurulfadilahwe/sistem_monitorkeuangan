@@ -1,10 +1,6 @@
 <?php
 header('Content-Type: application/json');
-$k = new mysqli("localhost", "root", "", "monitor_keuangan");
-if ($k->connect_error) {
-    echo json_encode(["success" => false, "error" => "Database connection failed"]);
-    exit;
-}
+include 'koneksi.php';
 
 $id = isset($_POST['id_detail']) ? (int)$_POST['id_detail'] : 0;
 $jenis = $_POST['jenis'] ?? '';

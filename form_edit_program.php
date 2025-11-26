@@ -1,5 +1,5 @@
 <?php
-$k = new mysqli("localhost","root","","monitor_keuangan");
+include 'koneksi.php';
 $id = (int)$_GET['id'];
 
 $q = $k->query("SELECT * FROM program WHERE id_program=$id");

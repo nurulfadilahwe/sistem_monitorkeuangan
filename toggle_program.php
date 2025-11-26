@@ -1,6 +1,6 @@
 <?php
 session_start();
-$k = new mysqli("localhost","root","","monitor_keuangan");
+include 'koneksi.php';
 
 $id = (int)$_GET['id'];
 

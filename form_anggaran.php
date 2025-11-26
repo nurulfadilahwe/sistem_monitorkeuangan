@@ -1,6 +1,5 @@
 <?php
-$k = new mysqli("localhost","root","","monitor_keuangan");
-if ($k->connect_error) { die("DB fail: ".$k->connect_error); }
+include 'koneksi.php';
 
 $sql = "SELECT r.id_rekening,
             CONCAT(p.nama_program,' › ',keg.nama_kegiatan,' › ',sub.nama_subkegiatan,' › ',r.kode_rekening,' - ',r.nama_rekening) AS label

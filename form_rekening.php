@@ -1,6 +1,5 @@
 <?php
-$k = new mysqli("localhost","root","","monitor_keuangan");
-if ($k->connect_error) { die("DB fail: ".$k->connect_error); }
+include 'koneksi.php';
 
 // Ambil daftar subkegiatan untuk dropdown
 $sql = "SELECT s.id_subkegiatan, CONCAT(p.nama_program,' › ',keg.nama_kegiatan,' › ',s.nama_subkegiatan) AS label

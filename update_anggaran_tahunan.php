@@ -1,7 +1,6 @@
 <?php
 session_start();
-$k = new mysqli("localhost","root","","monitor_keuangan");
-if ($k->connect_error) { die("DB fail: ".$k->connect_error); }
+include 'koneksi.php';
 
 $id            = $_POST['id'] ?? 0;
 $id_rekening   = $_POST['id_rekening'] ?? 0;

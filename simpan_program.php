@@ -1,8 +1,5 @@
 <?php
-$k = new mysqli("localhost","root","","monitor_keuangan");
-if ($k->connect_error) { 
-    die("DB fail: " . $k->connect_error); 
-}
+include 'koneksi.php';
 
 $kode      = $k->real_escape_string($_POST['kode']);
 $nama      = $k->real_escape_string($_POST['nama']);

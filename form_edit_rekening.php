@@ -1,7 +1,6 @@
 <?php
 session_start();
-$k = new mysqli("localhost","root","","monitor_keuangan");
-if ($k->connect_error) { die("DB fail: ".$k->connect_error); }
+include 'koneksi.php';
 
 // Pastikan ada ID
 if (!isset($_GET['id'])) {

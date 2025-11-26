@@ -1,6 +1,6 @@
 <?php
 session_start();
-$k = new mysqli("localhost","root","","monitor_keuangan");
+include 'koneksi.php';
 
 $id     = (int)$_POST['id_program'];
 $kode   = $k->real_escape_string($_POST['kode']);
