@@ -1,9 +1,9 @@
 <?php
 // ---- Ambil ENV dari Railway ----
-$host = getenv('DB_HOST') ?: 'localhost';
+$host = getenv('DB_HOST') ?: 'mysql.railway.internal';
 $user = getenv('DB_USER') ?: 'root';
-$pass = getenv('DB_PASSWORD') ?: '';
-$name = getenv('DB_NAME') ?: 'monitor_keuangan';
+$pass = getenv('DB_PASSWORD') ?: 'rBJTeTJsXakbtmACCEvWYBBDKAJhPSUH';
+$name = getenv('DB_NAME') ?: 'railway';
 $port = getenv('DB_PORT') ?: 3306;
 
 // ---- Koneksi MySQL ----
