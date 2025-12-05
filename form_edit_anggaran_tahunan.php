@@ -38,7 +38,7 @@ $namaBulan = [
 
 <div class="container py-4">
 <div class="card shadow">
-    <div class="card-header bg-warning">Edit Anggaran Tahunan</div>
+    <div class="card-header bg-primary text-white">Edit Anggaran Tahunan</div>
     <div class="card-body">
 
 <form action="update_anggaran_tahunan.php" method="post" class="row g-3">
@@ -102,7 +102,7 @@ $namaBulan = [
 
     <div class="col-12 d-flex justify-content-between">
         <a href="histori.php" class="btn btn-secondary">Kembali</a>
-        <button class="btn btn-warning">Simpan Perubahan</button>
+        <button class="btn btn-primary">Simpan Perubahan</button>
     </div>
 
 </form>

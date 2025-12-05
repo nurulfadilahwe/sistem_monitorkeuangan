@@ -87,9 +87,10 @@ $namaBulan = [
 
     <div class="col-md-4">
         <label class="form-label">Jenis</label>
-        <select name="jenis" class="form-select">
-            <option value="belanja" <?= $data['jenis']=='belanja'?'selected':'' ?>>Belanja</option>
-            <option value="pendapatan" <?= $data['jenis']=='pendapatan'?'selected':'' ?>>Pendapatan</option>
+        <select class="form-select" name="jenis" required>
+            <option value="murni"      <?= $ang['jenis']=='murni'?'selected':'' ?>>Murni</option>
+            <option value="pergeseran" <?= $ang['jenis']=='pergeseran'?'selected':'' ?>>Pergeseran</option>
+            <option value="perubahan"  <?= $ang['jenis']=='perubahan'?'selected':'' ?>>Perubahan</option>
         </select>
     </div>
 
